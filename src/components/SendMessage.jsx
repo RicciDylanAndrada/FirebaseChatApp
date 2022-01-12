@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { db, auth } from "../firebase";
 import firebase from "firebase/compat/app";
-const SendMessage = () => {
+const SendMessage = ({ handleScrole }) => {
   const [msg, setMsg] = useState("");
   const sendMessage = async (e) => {
     e.preventDefault();
@@ -32,6 +32,7 @@ const SendMessage = () => {
             placeholder="Send Message"
           />
           <button
+            onClick={handleScrole}
             className="w-24 bg-zinc-400	ml-4       hover:bg-zinc-500 rounded-md "
             type="submit"
           >
