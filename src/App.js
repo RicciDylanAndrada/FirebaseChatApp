@@ -7,9 +7,9 @@ function App() {
   const [user] = useAuthState(auth);
 
   return (
-    <div className="App">
+    <div className="App w-full h-full ">
       {user ? (
-        <div>
+        <div className="">
           <Chat />
         </div>
       ) : (
