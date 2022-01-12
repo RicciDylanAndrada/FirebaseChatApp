@@ -30,8 +30,7 @@ function Chat() {
   }, [message]);
   return (
     <div className="grid h-full    grid-cols-1 place-items-center w-full p-5 bg-zinc-700 ">
-      <SignOut />
-      <div className=" grid h-96  gap-4  w-full  overflow-auto scroll-smooth hover:scroll-auto pt-2	">
+      <div className=" grid h-5/6  gap-4  w-full  overflow-auto scroll-smooth hover:scroll-auto pt-2	">
         {message &&
           message.map(({ id, text, photoURL, displayName }) => (
             <div ref={el} className="flex    " key={id}>

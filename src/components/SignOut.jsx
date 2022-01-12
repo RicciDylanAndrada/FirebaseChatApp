@@ -1,11 +1,18 @@
-import Button from '@mui/material/Button';
-import { auth } from '../firebase';
+import Button from "@mui/material/Button";
+import { auth } from "../firebase";
 function SignOut() {
-    return (
-        <div>
-            <Button variant="contained" onClick={() => auth.signOut()} > Sign Out</Button>
-        </div> 
-    )
+  return (
+    <div className="text-xs mt-12	">
+      <Button
+        className="w-20 "
+        variant="contained"
+        onClick={() => auth.signOut()}
+      >
+        {" "}
+        <p className="text-xs	">Sign Out</p>
+      </Button>
+    </div>
+  );
 }
 
-export default SignOut
+export default SignOut;
