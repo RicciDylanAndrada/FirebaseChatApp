@@ -14,10 +14,9 @@ function Chat() {
       );
   }, []);
   return (
-    <div className="grid h-screen grid-cols-1 place-items-center w-full p-5 bg-zinc-700 ">
-      Chat
+    <div className="grid h-full  grid-cols-1 place-items-center w-full p-5 bg-zinc-700 ">
       <SignOut />
-      <div className=" grid gap-4  w-full   p-4">
+      <div className=" grid h-96 gap-4  w-full  overflow-auto	p-2">
         {message.map(({ id, text, photoURL, displayName }) => (
           <div className="flex    " key={id}>
             <img
