@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App w-full h-screen">
       {user ? (
-        <div className="h-screen bg-red-400 ">
+        <div className="h-screen ">
           <Chat />
         </div>
       ) : (

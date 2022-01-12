@@ -14,7 +14,7 @@ function Chat() {
       );
   }, []);
   return (
-    <div className="grid h-full  grid-cols-1 place-items-center w-full p-5 bg-zinc-700 ">
+    <div className="grid h-full    grid-cols-1 place-items-center w-full p-5 bg-zinc-700 ">
       <SignOut />
       <div className=" grid h-96 gap-4  w-full  overflow-auto	p-2">
         {message.map(({ id, text, photoURL, displayName }) => (
@@ -36,7 +36,7 @@ function Chat() {
           </div>
         ))}
       </div>
-      <div className=" w-full mt-4">
+      <div className=" w-full place-self-end  h-24  ">
         <SendMessage />
       </div>
     </div>

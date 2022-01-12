@@ -18,13 +18,13 @@ const SendMessage = () => {
     setMsg("");
   };
   return (
-    <div className="  border-t-2">
-      <form onSubmit={sendMessage}>
-        <div className="  flex p-4">
+    <div className=" h-full  ">
+      <div className="   border-t-2  h-full w-full items-center  flex p-2 ">
+        <form className="w-full flex " onSubmit={sendMessage}>
           <input
             type="text"
-            className="grow rounded-md
-            h-10 text-left p-2"
+            className="grow rounded-md w-full
+            h-14 text-left p-2"
             value={msg}
             onChange={(e) => {
               setMsg(e.target.value);
@@ -32,13 +32,13 @@ const SendMessage = () => {
             placeholder="Send Message"
           />
           <button
-            className="w-12 bg-zinc-400	ml-4       hover:bg-zinc-500 rounded-md "
+            className="w-24 bg-zinc-400	ml-4       hover:bg-zinc-500 rounded-md "
             type="submit"
           >
             Send
           </button>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
   );
 };
